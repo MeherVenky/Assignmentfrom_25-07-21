@@ -1,0 +1,33 @@
+import java.util.*;
+class Prime_Factor
+{
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+int n=sc.nextInt();
+int c=0;
+while(n%2==0)
+{
+System.out.println("2"+" ");
+n=n/2;
+c++;
+}
+for(int i=3;i<=Math.sqrt(n);i+=2)
+{
+while(n%i==0)
+{
+System.out.println(i+" ");
+n=n/i;
+c++;
+}
+}
+if(n>2){
+System.out.println(n);
+c++;
+}
+System.out.println("number of prime factors are = "+c);
+
+}
+}
+    
+   
