@@ -1,0 +1,13 @@
+class Solution {
+    static long nthFibonacci(long n){
+        // code here
+        int num=(int)n;
+        long p[]=new long[num+1];
+        p[0]=0;
+        p[1]=1;
+        for(int i=2;i<num+1;i++){
+          p[i]=(p[i-1]+p[i-2])%1000000007; 
+        }
+        return p[num];
+    }
+}
