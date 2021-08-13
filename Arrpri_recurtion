@@ -1,0 +1,19 @@
+class Arrpri_recurtion{
+static int meher(int a[],int n){
+int i=0;
+if(i==n){
+return i;
+}
+else{
+meher(a,n-1);
+System.out.println(a[n-1]);
+return n-1;
+}
+
+}
+public static void main(String args[]){
+int a[]={10,2,45,6,7,98};
+int n=a.length;
+meher(a,n);
+}
+}
