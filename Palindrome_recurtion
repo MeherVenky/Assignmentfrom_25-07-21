@@ -1,0 +1,22 @@
+import java.util.*;
+class Palindrome_recurtion{
+static int meher(int n){
+ int r,sum=0,temp;  
+while(n>0){    
+   r=n%10;  //getting remainder  
+   sum=(sum*10)+r;    
+   n=n/10;    
+  } 
+return sum;   
+}
+public static void main(String args[]){
+Scanner sc=new Scanner(System.in);
+int n=sc.nextInt();
+int temp;
+temp=meher(n);
+if(temp==n)    
+   System.out.println("palindrome number ");    
+  else    
+   System.out.println("not palindrome");    
+}
+}
