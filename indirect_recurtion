@@ -1,0 +1,22 @@
+import java.util.*;
+class indirect_recurtion{
+static final int N=50;
+static int n=5;
+static void meher1(){
+if(n<=50){
+System.out.printf(" "+"%d",n);
+n+=5;
+meher2();
+}
+}
+static void meher2(){
+if(n<=50){
+System.out.printf(" "+"%d",n);
+n+=5;
+meher1();
+}
+}
+public static void main(String args[]){
+meher1();
+}
+}
